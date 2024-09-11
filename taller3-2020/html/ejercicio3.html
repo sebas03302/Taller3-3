@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Formulario #2</title>
+    <link rel="stylesheet" href="../css/style3.css">
+</head>
+<body>
+    <div class="div1" style="display: flex; align-items: center;">
+        <img src="../Recursos/image.png" alt="" style="margin-right: 10px;">
+        <h1 style="color:red;">Employee Registration Form</h1>
+    </div>
+    <form action="" method="post">
+        
+      
+        <input type="radio" id="" name="title" value="Mr." required> Mr.
+        <input type="radio" id="" name="title" value="Mrs."> Mrs.
+        <input type="radio" id="" name="title" value="Ms."> Ms.
+        <br><br>
+        
+        <label for="firstName">First Name:</label>
+       
+        <input type="text" id="firstName" name="firstName" pattern="(Mr|Ms|Mrs)\s[a-zA-Z]+" placeholder="First name" required>
+        <br><br>
+
+        <label for="lastName">Last Name:</label>
+        
+        <input type="text" id="lastName" name="lastName" pattern="(Mr|Ms|Mrs)\s\s?\s?[a-zA-Z]+" placeholder="Last name" required>
+        <br><br>
+
+        <label for="mail">Mail:</label>
+       
+        <input type="email" id="mail" name="mail" pattern="[a-zA-Z0-9._%+-]+@cecar\.edu\.co" required>
+        <br><br>
+
+
+        <label for="address">Address:</label>
+       
+        <input type="text" id="address" name="address" maxlength="100" required>
+        <br><br>
+
+        <label for="city">City:</label>
+       
+        <input type="text" id="city" name="city" required>
+        <br><br>
+
+        <label for="state">State:</label>
+       
+        <select id="state" name="state" required>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Other">Other</option>
+        </select>
+        <br><br>
+
+        <label for="zip">Zip:</label>
+        
+        <input type="text" id="zip" name="zip" required>
+        <br><br>
+
+        <label for="photo">Upload Photo:</label>
+       
+        <input type="file" id="photo" name="photo" required>
+        <br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
